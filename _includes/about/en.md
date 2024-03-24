@@ -1,4 +1,4 @@
-Hi, I am Jakub Lukaszewski (you can call me Luka). I currently work at [VML](https://www.vml.com).
+Hi, I am Jakub Lukaszewski (you can call me Kuba). I currently work on backend technologies at [VML](https://www.vml.com).
 
 I consider myself as a hybrid between a software engineer specifically into the backend technology and accelerated computing (i.e. HPC, machine learning), and a business-oriented person deeply caring about many non-tech related aspects (e.g. product development, product-market fit, team building, leadership) in technology sector in general.
 

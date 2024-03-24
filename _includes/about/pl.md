@@ -1,0 +1,7 @@
+Cześć, nazywam się Jakub Łukaszewski (możesz mi mówić Kuba). Obecnie zajmuję się technologiami backendowymi w [VML](https://www.vml.com).
+
+Mam hybrydowe podejście do projektów, w których uczestniczę. Z jednej strony jestem inżynierem oprogramowania zajmującym się konkretnie technologiami backendowymi i HPC (tj. uczenie maszynowe), jednak jestem osobą mocno zorientowaną na biznes, głęboko dbającą o wiele aspektów niezwiązanych bezpośrednio z technologią (np. rozwój produktu, dopasowanie produktu do rynku, budowanie zespołu i przywództwo) w sektorze technologicznym.
+
+Jestem w trakcie realizacji studiów inżynierskich na kierunku Inżynieria Systemów ze specjalizacją Inżynieria Danych na [Politechnice Wrocławskiej] (https://en.wikipedia.org/wiki/Wrocław_University_of_Science_and_Technology).
+
+ przeszłości grałem w piłkę nożną przez 8 lat. Grałem w [Kujawsko-Pomorskim Związku Piłki Nożnej](https://pl.wikipedia.org/wiki/Kujawsko-Pomorski_Związek_Piłki_Nożnej) przez 4 lata i byłem kapitanem drużyny przez 2 lata podczas jednoczesnej gry klubowej w [Zawiszy Bydgoszcz](https://en.wikipedia.org/wiki/Zawisza_Bydgoszcz). Zostałem również powołany na konsultację selekcyjną przez [Polski Związek Piłki Nożnej](https://en.wikipedia.org/wiki/Polish_Football_Association) do zespołu [Reprezentacji Polski w Piłce Nożnej](https://en.wikipedia.org/wiki/Poland_national_football_team).
