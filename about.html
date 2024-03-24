@@ -9,18 +9,17 @@ multilingual: true
 
 {% include multilingual-sel.html %}
 
-<!-- Polish Version -->
-<div class="pl post-container">
-    {% capture about_pl %}{% include about/pl.md %}{% endcapture %}
-    {{ about_pl | markdownify }}
-</div>
-
 <!-- English Version -->
 <div class="en post-container">
     {% capture about_en %}{% include about/en.md %}{% endcapture %}
     {{ about_en | markdownify }}
 </div>
 
+<!-- Polish Version -->
+<div class="pl post-container">
+    {% capture about_pl %}{% include about/pl.md %}{% endcapture %}
+    {{ about_pl | markdownify }}
+</div>
 
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
