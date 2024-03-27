@@ -78,7 +78,7 @@ $$element\_address = offset + element\_size * element\_idx$$
 
 But hey! Lists can store heterogeneous elements. They might be of a different size, which breaks the above formula! To avoid that, Python introduces another indirection where it actually doesn't store elements directly in an array but it stores their addresses under which the according element is located at (Fig. 1).
 
-![img](img/in-post/hash-table/post-hash-table-memory-addresses.jpg)
+![img](/img/in-post/hash-table/post-hash-table-memory-addresses.jpg)
 *Fig. 1. An array with memory addresses pointing to respective element locations.*
 
 ![img](/img/in-post/post-metro-ui.jpg)
