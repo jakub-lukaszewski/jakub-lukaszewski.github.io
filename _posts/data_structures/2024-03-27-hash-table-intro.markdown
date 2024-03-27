@@ -29,7 +29,7 @@ We can think of a dictionary as a math function assigning a value to possibly mo
 $$ \forall y \in Y_f \text{ } \exists x \in X_f : f(x) = y $$
 *  Unique keys: there doesn't exist two distinct values associated with one argument
 
-$\theta=2.5$
+$$\theta=2.5$$
 
 $$\nexists _{y_0 \neq y_1} [f(x)=y_0 \land f(x)=y_1]$$, where $$y_i\in Y_f,x\in X_f$$
 * Non-unique values: there might be an argument for which there is more than one value
