@@ -81,6 +81,8 @@ But hey! Lists can store heterogeneous elements. They might be of a different si
 ![img](img/in-post/hash-table/post-hash-table-memory-addresses.jpg)
 *Fig. 1. An array with memory addresses pointing to respective element locations.*
 
+![img](/img/in-post/post-metro-ui.jpg)
+
 The same idea is used in hash tables. They are named this way because of a hashing mechanism that lets them translate keys into integer values acting as array indices and without a significant performance loss it allows for element retrieval by using an arbitrary key. It's important to note that not every key can be hashed like e.g. mutable lists, dictionaries and sets.
 
 There's going to be a part about hash functions in detail in a near future, so stay tuned!
