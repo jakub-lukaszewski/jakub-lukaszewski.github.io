@@ -78,7 +78,7 @@ $$element\_address = offset + element\_size * element\_idx$$
 
 But hey! Lists can store heterogeneous elements. They might be of a different size, which breaks the above formula! To avoid that, Python introduces another indirection where it actually doesn't store elements directly in an array but it stores their addresses under which the according element is located at (Fig. 1).
 
-![img](img/in-post/hash-table/post-hash-table-memory-addresses-in-array.jpg)
+![img](img/in-post/hash-table/post-hash-table-memory-addresses.jpg)
 *Fig. 1. An array with memory addresses pointing to respective element locations.*
 
 The same idea is used in hash tables. They are named this way because of a hashing mechanism that lets them translate keys into integer values acting as array indices and without a significant performance loss it allows for element retrieval by using an arbitrary key. It's important to note that not every key can be hashed like e.g. mutable lists, dictionaries and sets.
