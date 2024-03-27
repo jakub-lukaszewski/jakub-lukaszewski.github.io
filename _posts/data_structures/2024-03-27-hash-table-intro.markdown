@@ -25,8 +25,12 @@ An examples resembling this abstract data type is a phone book where keys are na
 We can think of a dictionary as a math function assigning a value to possibly more than one argument. Since we might interpret it this way, you probably guess there are certain properties about it:
 
 *  Only key-value pairs: argument of a function determines a value and inversely, a value is assigned an argument
-$$\forall y \in Y_f \text{ } \exists x \in X_f : f(x) = y$$
+
+$$ \forall y \in Y_f \text{ } \exists x \in X_f : f(x) = y $$
 *  Unique keys: there doesn't exist two distinct values associated with one argument
+
+$\theta=2.5$
+
 $$\nexists _{y_0 \neq y_1} [f(x)=y_0 \land f(x)=y_1]$$, where $$y_i\in Y_f,x\in X_f$$
 * Non-unique values: there might be an argument for which there is more than one value
 * Arbitrary pairs: keys and values might be of various types like pictures, strings or numbers, though they have to be uniform within a given set (*)
