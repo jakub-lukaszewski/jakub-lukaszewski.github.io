@@ -11,7 +11,11 @@ tags:
   - Data structures
 ---
 
-Hash table is a data structure consisting of keys and values arranged in pairs. Moreover, it defines operations on those elements, like:
+At the beginning, let's make a distinction. Dictionaries and hash tables are frequently used interchangeably, but they are not the same.
+
+Hash table is just one way to approach implementation part of a dictionary. In this post, I would like to start off with some properties of a dictionary and go beyond that in consecutive posts.
+
+Dictionary is a data structure consisting of keys and values arranged in pairs. Moreover, it defines operations on those elements, like:
 
 1.  delete a key-value pair,
 2.  add a key-value pair,
