@@ -24,15 +24,12 @@ An examples resembling this abstract data type is a phone book where keys are na
 
 We can think of a dictionary as a math function assigning a value to possibly more than one argument. Since we might interpret it this way, you probably guess there are certain properties about it:
 
-- Only key-value pairs: argument of a function determines a value and inversely, a value is assigned an argument
+- **only key-value pairs:** argument of a function determines a value and inversely, a value is assigned an argument <br><center> $ \forall y \in Y_f \text{ } \exists x \in X_f : f(x) = y $,
 
-$ \forall y \in Y_f \text{ } \exists x \in X_f : f(x) = y $
-- Unique keys: there doesn't exist two distinct values associated with one argument
-
-$ \nexists _{y_0 \neq y_1} [f(x)=y_0 \land f(x)=y_1] $, where $ y_i\in Y_f,x\in X_f $
-- Non-unique values: there might be an argument for which there is more than one value
-- Arbitrary pairs: keys and values might be of various types like pictures, strings or numbers, though they have to be uniform within a given set (*)
-- Unordered pairs: no order by default, it is implementation-specific
+- **unique keys:** there doesn't exist two distinct values associated with one argument <br><center> $ \nexists _{y_0 \neq y_1} [f(x)=y_0 \land f(x)=y_1] $, where $ y_i\in Y_f,x\in X_f $,
+- **non-unique values:** there might be an argument for which there is more than one value,
+- **arbitrary pairs:** keys and values might be of various types like pictures, strings or numbers, though they have to be uniform within a given set (*),
+- **unordered pairs:** no order by default, it is implementation-specific.
 
 > (*) Most programming languages don't allow hash tables to have keys of different data type. However, there are exceptions and in some languages it is possible if a data type is hashable. One of such languages is Python. Hashable data types in Python are immutable types like strings, numbers and tuples.
 
@@ -40,12 +37,12 @@ Now, how do we implement such a data type? We don't! (unless we have a reason...
 
 In Python, `dict` type is the implementation and the underlying inner-workings being wrapped by it are written in C.
 
-Code:
+*Code*
 ```python
 spanish_english_dict = {"casa": "house", "manzana": "apple", "platano": "banana"}
 print(f"Dict type: {type(spanish_english_dict)}")
 ```
-Output:
+*Output*
 ```
 `Dict` type: <class 'dict'>
 ```
@@ -60,7 +57,7 @@ Have you ever wondered why a sequence look up is so blazingly fast in Python? Le
 import string
 from time import perf_counter
 
-example_sequence = "starcraft" * 100_000_000 + string.ascii_lowercase * 10_000_000
+example_sequence = "starcraft" * 100_000_000 + string.ascii_lowercase * 50_000_000
 
 start_time = perf_counter()
 print(example_sequence[:100])
@@ -70,13 +67,11 @@ lookup_time = end_time - start_time
 print(f"Lookup took {lookup_time*1_000:.2f} ms")
 ```
 
-This sentence is $$3.05B$$ chars long and I was able to get a desired first $$100$$ chars of a sentence in approx. 0.06 ms! Better still, an almost instantaneous lookup is true for all sequence types in Python: tuples, string, lists. It's because of an array implementation , sequences are backed by that and it has the following properties:
-1.  An array occupies a contiguous blocks of memory
-2.  Fixed size is required for every array element, known upfront.
+This sentence is 2.2B chars long and I was able to get a desired first 100 chars of a sentence in approx. 0.06 ms! Better still, an almost instantaneous lookup is true for all sequence types in Python: tuples, string, lists. It's because of an array implementation , sequences are backed by that and it has the following properties:
+1.  an array occupies a contiguous blocks of memory,
+2.  fixed size is required for every array element, known upfront.
 
-To get a specific array element, a machine needs its memory address, and it can be calculated given an element's index, element's size and an array memory address (also known as offset):
-
-$$element\_address = offset + element\_size * element\_idx$$
+To get a specific array element, a machine needs its memory address, and it can be calculated given an element's index, element's size and an array memory address (also known as offset): <br><center> $ element\_address = offset + element\_size * element\_idx $.
 
 But hey! Lists can store heterogeneous elements. They might be of a different size, which breaks the above formula! To avoid that, Python introduces another indirection where it actually doesn't store elements directly in an array but it stores their addresses under which the according element is located at (Fig. 1).
 
