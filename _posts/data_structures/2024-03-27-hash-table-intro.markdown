@@ -18,7 +18,7 @@ Hash table is a data structure consisting of keys and values arranged in pairs. 
 3.  modify a value given a key,
 4.  lookup a value given a key.
 
-An examples resembling this abstract data type is a phone book where keys are names and values are numbers and a billingual dictionary with keys as foreign words and values as their definitions in other language.
+An example resembling this abstract data type is a phone book where keys are names and values are numbers and a billingual dictionary with keys as foreign words and values as their definitions in other language.
 
 > Dictionaries are also called maps or associative arrays because we map keys to values or to put it another way, we associate values with keys.
 
@@ -70,17 +70,17 @@ lookup_time = end_time - start_time
 print(f"Lookup took {lookup_time*1_000:.2f} ms")
 ```
 
-This sentence is 2.2B chars long and I was able to get a desired first 100 chars of a sentence in approx. 0.06 ms! Better still, an almost instantaneous lookup is true for all sequence types in Python: tuples, string, lists. It's because of an array implementation , sequences are backed by that and it has the following properties:
+This sentence is 2.2B chars long and I was able to get a desired first 100 chars of a sentence in approx. 0.06 ms! Better still, an almost instantaneous lookup is true for all sequence types in Python, e.g. tuples, string, lists. It's because of an array implementation, sequences are backed by that and it has the following properties:
 1.  an array occupies a contiguous blocks of memory,
 2.  fixed size is required for every array element, known upfront.
 
 To get a specific array element, a machine needs its memory address, and it can be calculated given an element's index, element's size and an array memory address (also known as offset): <br><center> $ element\_address = offset + element\_size * element\_idx $.
 
-But hey! Lists can store heterogeneous elements. They might be of a different size, which breaks the above formula! To avoid that, Python introduces another indirection where it actually doesn't store elements directly in an array but it stores their addresses under which the according element is located at (Fig. 1).
+But hey! Lists can store heterogeneous elements. They might be of a different size, which breaks the above formula! To avoid that, Python introduces another indirection where it actually doesn't store elements directly in an array but it stores their addresses under which the respective element is located at (**Fig. 1**).
 
 ![img](/img/in-post/hash-table/post-hash-table-memory-addresses.jpg)
 ***Fig. 1.** An array with memory addresses pointing to respective element locations.*
 
 The same idea is used in hash tables. They are named this way because of a hashing mechanism that lets them translate keys into integer values acting as array indices and without a significant performance loss it allows for element retrieval by using an arbitrary key. It's important to note that not every key can be hashed like e.g. mutable lists, dictionaries and sets.
 
-There's going to be a part about hash functions in detail in a near future, so stay tuned!
+There's going to be a part about hash functions in detail in the near future, so stay tuned!
